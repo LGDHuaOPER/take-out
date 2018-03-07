@@ -32,6 +32,7 @@ Vue.config.productionTip = false;
 // 通过 Vue.extend() 创建的组件构造器，
 // 或者，只是一个组件配置对象。
 const routes = [
+  {path: '/', redirect: '/goods'},
   {path: '/goods', component: goods},
   {path: '/ratings', component: ratings},
   {path: '/seller', component: seller}

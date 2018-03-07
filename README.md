@@ -53,12 +53,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	cnpm install --save-dev stylus-loader
 	cnpm install --save vue-router
 	cnpm install --save vue-resource	//处理请求和响应
+	cnpm install --save better-scroll	//扩展iscroll
 ```
 ## 注意事项
 ```
 	vue-loader 依赖了 postcss 工具，搞定css兼容性问题（flex等）
+	flex弹性布局
+	移动端1px边框实现
+	css sticky footer布局
 ```
 
 /*log*/
 * 2017年3月4日开始开发
 * 2017年3月6日完成基本架构和header组件的开发
+* 2017年3月8日完成goods组件左侧menu、右侧食品表布局、shopcart组件的开发
