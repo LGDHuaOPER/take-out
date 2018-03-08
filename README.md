@@ -57,6 +57,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 ## 注意事项
 ```
+	预览图在/preview
 	vue-loader 依赖了 postcss 工具，搞定css兼容性问题（flex等）
 	flex弹性布局
 	移动端1px边框实现
@@ -67,3 +68,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * 2017年3月4日开始开发
 * 2017年3月6日完成基本架构和header组件的开发
 * 2017年3月8日完成goods组件左侧menu、右侧食品表布局、shopcart组件的开发
+* 2017年3月9日完成cartcontrol组件和食品选择数据绑定的开发
+
