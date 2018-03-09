@@ -30,7 +30,7 @@
     <div class="background">
       <img :src="seller.avatar" width="100%" height="100%">
     </div>
-    <transition name="fade">
+    <transition name="fade" :duration="{ enter: 960, leave: 600 }">
       <div v-show="detailShow" class="detail">
         <div class="detail-wrapper clearfix">
           <div class="detail-main">
@@ -219,7 +219,7 @@
     /*Css Sticky footers布局*/
     .fade-enter-active
       /*transition all .3s ease*/
-      transition all 1s linear
+      transition all 0.8s linear
     .fade-leave-active
       /*transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0)*/
       transition all 0.5s cubic-bezier(1.0, 0.5, 0.8, 1.0)

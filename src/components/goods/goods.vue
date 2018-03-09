@@ -34,7 +34,7 @@
                                                                 v-show="food.oldPrice">￥{{food.oldPrice}}</span>
                 </div>
                 <div class="cartcontrol-wrapper">
-                  <cartcontrol :food="food"></cartcontrol>
+                  <cartcontrol @add="addFood" :food="food"></cartcontrol>
                 </div>
               </div>
             </li>
@@ -42,7 +42,7 @@
         </li>
       </ul>
     </div>
-    <shopcart :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
+    <shopcart ref="shopcart" :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
   </div>
 </template>
 
@@ -115,6 +115,15 @@
         // 调用接口
         this.foodsScroll.scrollToElement(el, 300);
         // console.log(index);
+      },
+      addFood(target) {
+        this._drop(target);
+      },
+      _drop(target) {
+        // 下一帧时执行，体验优化,异步执行下落动画。解决第一次下落与减号同时进行过渡，有点卡
+        this.$nextTick(() => {
+          this.$refs.shopcart.drop(target);
+        });
       },
       _initScroll() {
         // console.log(this.$refs.menuWrapper);

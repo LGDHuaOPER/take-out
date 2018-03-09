@@ -69,4 +69,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * 2017年3月6日完成基本架构和header组件的开发
 * 2017年3月8日完成goods组件左侧menu、右侧食品表布局、shopcart组件的开发
 * 2017年3月9日完成cartcontrol组件和食品选择数据绑定的开发
+* 2017年3月10日完成购物车小球动画的开发
 
